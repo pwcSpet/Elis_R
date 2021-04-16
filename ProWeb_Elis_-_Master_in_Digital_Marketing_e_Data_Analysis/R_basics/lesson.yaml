@@ -5,3 +5,60 @@
   Type: Standard
   Organization: Pro Web Consulting
   Version: 0.1.1
+
+- Class: text
+  Output: In this lesson, we will explore some basic building blocks of the R programming
+    language.
+
+- Class: text
+  Output: If at any point you'd like more information on a particular topic related
+    to R, you can type help.start() at the prompt, which will open a menu of resources
+    (either within RStudio or your default web browser, depending on your setup).
+    Alternatively, a simple web search often yields the answer you're looking for.
+
+- Class: cmd_question
+  Output: In its simplest form, R can be used as an interactive calculator. Type
+    5 + 7 and press Enter.
+  CorrectAnswer: 5 + 7
+  AnswerTests: omnitest(correctExpr='5 + 7')
+  Hint: Type 5 + 7 and press Enter.
+
+- Class: text
+  Output: R simply prints the result of 12 by default. However, R is a programming
+    language and often the reason we use a programming language as opposed to a calculator
+    is to automate some process or avoid unnecessary repetition.
+
+- Class: text
+  Output: In this case, we may want to use our result from above in a second calculation.
+    Instead of retyping 5 + 7 every time we need it, we can just create a new variable
+    that stores the result.
+
+- Class: text
+  Output: 'The way you assign a value to a variable in R is by using the assignment
+    operator, which is just a ''less than'' symbol followed by a ''minus'' sign. It
+    looks like this: <-'
+
+- Class: text
+  Output: Think of the assignment operator as an arrow. You are assigning the value
+    on the right side of the arrow to the variable name on the left side of the arrow.
+
+- Class: cmd_question
+  Output: To assign the result of 5 + 7 to a new variable called x, you type x <-
+    5 + 7. This can be read as 'x gets 5 plus 7'. Give it a try now.
+  CorrectAnswer: x <- 5 + 7
+  AnswerTests: any_of_exprs('x <- 5 + 7', 'x <- 7 + 5')
+  Hint: Type x <- 5 + 7. It's important to include a single space on each side of
+    the assignment operator, but do NOT put a space between the `<` and the `-` that
+    form the arrow.
+
+- Class: text
+  Output: You'll notice that R did not print the result of 12 this time. When you
+    use the assignment operator, R assumes that you don't want to see the result immediately,
+    but rather that you intend to use the result for something else later on.
+
+- Class: cmd_question
+  Output: To view the contents of the variable x, just type x and press Enter. Try
+    it now.
+  CorrectAnswer: x
+  AnswerTests: omnitest(correctExpr='x')
+  Hint: Type x and press Enter. This will automatically print the value of x.
