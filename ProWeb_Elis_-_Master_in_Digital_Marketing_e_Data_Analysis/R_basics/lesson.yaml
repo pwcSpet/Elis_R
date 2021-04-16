@@ -61,4 +61,4 @@
     it now.
   CorrectAnswer: x
   AnswerTests: omnitest(correctExpr='x')
-  Hint: Type x and press Enter. This will automatically print the value of x.
+  Hint: Type x and press Enter. This will automatically print the value of X.
